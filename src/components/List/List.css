@@ -1,0 +1,39 @@
+.listmenu:hover {
+  border-style: solid;
+  background-color: orange;
+  border-color: orange ;
+  padding: 11px;
+}
+.listmenu__item {
+    position: absolute;
+    background-color:gray;
+    
+}
+.listmenu__item.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .listmenu__item.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+  }
+  .listmenu__items {
+    padding: 10px  0;
+    
+  }
+  @media screen and (max-width: 600px) { 
+    .listmenu{
+     float: left;
+    }
+    .listmenu__items {
+      display: block;
+  }
+}

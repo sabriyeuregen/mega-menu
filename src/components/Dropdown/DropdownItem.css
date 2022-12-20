@@ -1,0 +1,13 @@
+.dropdownItem {
+  display: flex;
+  padding: 10px;
+  
+}
+
+.dropdownItem a {
+  max-width: 100px;
+  transition: var(--speed);
+  text-align: center;
+  cursor: pointer;
+  
+}

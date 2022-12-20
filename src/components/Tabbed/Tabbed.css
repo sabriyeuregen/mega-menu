@@ -1,0 +1,33 @@
+.tabbed:hover {
+  border-style: solid;
+  background-color: orange;
+  border-color: orange;
+  padding: 11px;
+}
+.tabbedMenu__item {
+  position: absolute;
+  background-color: gray;
+  padding: 10px 20px;
+}
+.tabbedMenu__item.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.tabbedMenu__item.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+@media screen and (max-width: 600px) {
+ 
+  .tabbedMenu__items {
+    display: flex;
+    flex-direction: column;
+  }
+}

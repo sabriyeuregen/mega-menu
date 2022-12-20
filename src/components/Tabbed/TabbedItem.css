@@ -1,0 +1,116 @@
+.tabbedMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 150px;
+}
+.firstcolumn div:nth-child(1) {
+  text-align: center;
+}
+.firstcolumn div:nth-child(1):hover {
+  background-color: orange;
+  cursor: pointer;
+  
+}
+.secondcolumn div:nth-child(1) {
+  text-align: center;
+}
+.secondcolumn div:nth-child(1):hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.thirdcolumn div:nth-child(1) {
+  text-align: center;
+}
+.thirdcolumn div:nth-child(1):hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.tabbedMenuFirst__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.tabbedMenuFirst__item a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+.tabbedMenuFirst__item.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+.tabbedMenuFirst__item.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+.tabbedMenuSec__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+.tabbedMenuSec__item a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  
+}
+.tabbedMenuSec__item.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.tabbedMenuSec__item.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+  position: absolute;
+}
+.tabbedMenuThird__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.tabbedMenuThird__item a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+.tabbedMenuThird__item.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+  position: absolute;
+}
+.tabbedMenuThird__item.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+@media screen and (max-width: 600px) {
+  .tabbedMenu {
+    display: flex;
+  }
+}
